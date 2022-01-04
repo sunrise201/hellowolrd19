@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                echo 'clone the repo!'
-                sh 'rm -fr webapp'
+                echo 'clone the on repo!'
                 sh 'git clone https://github.com/sunrise201/hellowolrd19.git'
                 
             }
