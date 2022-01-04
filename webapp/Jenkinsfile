@@ -1,0 +1,13 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Stage 1') {
+            steps {
+                echo 'clone the repo!'
+                sh 'rm -fr webapp'
+                sh 'git clone https://github.com/sunrise201/hellowolrd19.git'
+                
+            }
+        }
+    }
+}
